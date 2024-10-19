@@ -1,0 +1,456 @@
+/**
+Rebecca Ysbrand
+Stylesheet
+Oct 2024
+**/
+
+body, header, nav, main, footer, img, h1, ul, aside, figure, figcaption, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* General Styles (applies to all viewports) */
+
+body {
+    background: linear-gradient(to bottom right, #eeeee4, #94a153); 
+}
+
+/** Nav rules**/
+header {
+    background-color: #94a153;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    background-color: #94a153;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.logo img {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width:100%;
+}
+
+nav li {
+
+    margin: auto;
+    font-weight: bold;
+    padding: .6em;
+    font-size: 1.5em;
+    border-top: 1px solid #fff;
+}
+
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav a {
+    color: #eeeee4;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    width:100%;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+/**Style rules for main content**/
+
+.heroimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/floatingSC.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width:100%;
+  }
+    
+
+.hometitle {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.hometitle h1 {
+    text-align: center;
+    font-size:40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 2%;
+    color:white;
+}
+
+.hometitle h3 {
+    text-align:center;
+    font-size:20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color:white;
+}
+
+.title {
+    width: 100%;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    margin-top: 2%;
+
+}
+
+.title h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.gridcontainer {
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color: #94a153;
+    box-shadow: 0px 0px 40px hsla(72, 81%, 29%, 0.716); 
+    margin: 0 auto; 
+    height: auto;
+    width: 100%;
+}
+
+.griditem1 {
+    padding: 2%;
+}
+
+.griditem1 p {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #6f7b5f;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+}
+
+.griditem2 {
+    padding-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.griditem2 img {
+    width: 100%;
+    height: 300px;
+}
+
+.griditem2 figcaption {
+    font-weight: bold;
+    text-align: center;
+    color:black;
+    padding-top: 1%;
+}
+
+.griditem3 p {
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #6f7b5f;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+iframe {
+    width: 100%; 
+    height: auto; 
+}
+
+.quantum {
+    width:100%;
+}
+
+.quantum p {
+    padding: 2%;
+}
+
+.quantumimg figure img {
+    width: 100%;
+    height: 300px;
+}
+
+.quantumimg figcaption {
+    font-weight: normal;
+    text-align: center;
+    color:black;
+    padding-top: 1%;
+}
+
+.griditem4 figure {
+    padding: 2%;
+}
+
+.griditem4 figure img {
+    width: 100%;
+    height: 300px;
+}
+
+.griditem4 figcaption {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #6f7b5f;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+
+/**Media query for Tablet viewports**/
+
+@media screen and (min-width: 769px) {
+    header {
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 1em; 
+        background-color: #94a153;
+        position: relative;
+        margin-top: -10px;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .logo img {
+        display:block;
+        height: 40px; 
+        width: 40px; 
+        padding-left: 11%; 
+        padding-top:5%; 
+    }
+    
+    nav {
+        background-color: #94a153;
+        width: 100%;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav img {
+        display: block;
+    }
+    
+    nav ul {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline;
+        margin-left: 10px; 
+        border:none;
+        padding-bottom: 2%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px; 
+        
+    }
+
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .griditem1 {
+        grid-row-start: 1;
+        grid-row-end:3;
+    }
+
+    .griditem1, .griditem2 {
+        padding: 10px;
+    }
+
+    .griditem2:nth-of-type(1) {
+        grid-column: 2; 
+    }
+
+    .griditem2:nth-of-type(2) {
+        grid-column: 2; 
+    }
+
+    .griditem2 iframe {
+        width: 75%; 
+        height: 450px;
+        margin: 0 auto;
+        display: block; 
+
+    }
+
+    .griditem2 img {
+        display:grid;
+        width: 65%;
+        height: 300px;
+        margin: 0 auto;
+        padding-top: 2%;
+        
+    }
+
+    .quantumimg figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .quantum figcaption {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    
+    .quantumimg figure img {
+        width: 50%;
+        height: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .griditem3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .griditem4 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        gap: 20px; 
+    }
+    
+    .griditem4 figure {
+        flex: 1;
+        text-align: center; 
+    }
+    
+    .griditem4 figure img {
+        width: 100%; 
+        height: 300px;
+    }
+
+}
+
+/**Media query for Large Desktop viewports**/
+
+@media screen and (min-width: 1921px) {
+    nav {
+        background-color: #94a153;
+        overflow: hidden;
+        padding: 10px;
+    }
+    
+    nav img {
+        display: inline-block;
+        height: 50px; 
+        vertical-align: middle;
+    }
+    
+    nav ul {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav li {
+        display: inline;
+        margin-left: 10px; 
+        border:none;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px; 
+    }
+
+    .griditem1 article p {
+        text-align: left;
+        font-size: 1.65em;
+        font-weight: bold;
+        text-shadow: 4px 4px 10px #6f7b5f;
+        font-family: "Agdasima", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+    }
+
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .griditem2 iframe {
+        width: 550px;
+        height: 400px;
+    }
+
+    .griditem2 img {
+        width: 550px;
+        height: 400px;
+    }
+
+    .quantum p {
+        text-align: left;
+        font-size: 1.65em;
+        font-weight: bold;
+        text-shadow: 4px 4px 10px #6f7b5f;
+        font-family: "Agdasima", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .quantumimg figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    .quantum figcaption {
+        text-align: center;
+        margin-bottom: 4px;
+        font-size: 1.65em;
+    }
+    
+    .quantumimg figure img {
+        width: 60%;
+        height: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+} 
+
